@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юридическая консультация</title>
+    <link rel="stylesheet" href="css/style.css">  
+    <script src="js/inputmask.min.js" defer></script>
+    <script src="js/just-validate.min.js" defer></script>
+    <script src="js/main.js" defer></script> 
+</head>
+<body>
+    <div class="body__container">
+        <div class="modal">
+            <div class="modal__box">
+                <div class="modal__box-header">
+                    <div class="modal__title title">Оставить заявку</div>
+                    <div class="modal__close"></div>            
+                </div>               
+                <form action="#" class="modal__form" id="modal__form">
+                    <div>
+                        <input type="name" name="name" class="modal__input" id="modal__name" placeholder="Ваше имя">
+                    </div>
+                    <div>
+                        <input type="phone" name="phone" class="modal__input" id="modal__phone" placeholder="Ваше Телефон">
+                    </div>
+                    <div>
+                        <input type="email" name="email" class="modal__input" id="modal__email" placeholder="Ваш E-mail">
+                    </div>
+                    <button class="btn modal_btn" type="submit">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#header" class="header__logo">
+                        <div class="header__logo-img">
+                            <img src="icons/logo.svg" alt="логотип сайта">
+                        </div>
+                        <div class="header__logo-info">Юридическая консультация</div>
+                    </a>
+                    <div class="header__box">
+                        <div class="header__connection">
+                            <div class="header__connection-items">
+                                <a href="https://vk.com/nvlaw" class="header__connection-item">
+                                    <div class="header__connection-icon">
+                                        <img src="icons/vk.svg" alt="логотип ВК">
+                                    </div>
+                                    <span class="header__connection-info">Мы в Вконтакте</span>
+                                </a>
+                            </div>
+                            <div class="header__connection-items">
+                                <a href="https://yandex.ru/maps/org/yuridicheskaya_pomoshch/234571748160/?ll=76.574434%2C60.930905&z=17" class="header__connection-item">
+                                    <div class="header__connection-icon">
+                                        <img src="icons/location.svg" alt="Геолокация">
+                                    </div>
+                                    <span class="header__connection-info">Адрес: г. Нижневартовск, ул. Мусы Джалиля 9</span>
+                                </a>
+                            </div>
+                            <div class="header__connection-items">
+                                <a href="tel:+79821592105" class="header__connection-item">
+                                    <div class="header__connection-icon">
+                                        <img src="icons/phone.svg" alt="Телефон">
+                                    </div>
+                                    <span class="header__connection-info">8 982 159 21 05</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hamburger">
+                            <span class="hamburger__item"></span>
+                            <span class="hamburger__item"></span>
+                            <span class="hamburger__item"></span>
+                        </div>
+                        <nav class="header__navigation">
+                            <ul class="header__lists">
+                                <li class="header__lists-item"><a href="#" class="header__lists-btn">О компании</a></li>
+                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Услуги и цены</a></li>
+                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Статьи</a></li>
+                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Примеры дел</a></li>
+                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Вопросы</a></li>
+                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Контакты</a></li>
+                            </ul>                         
+                        </nav>
+                    </div>                   
+                   
+                </div>
+            </div>           
+        </header>
+        <section class="information">
+            <div class="container information__container">   
+                <div class="information__background">
+                    <h1 class="title information__title">Помощь юриста в Нижневартовске</h1>
+                    <h2 class="information__subtitle">Отстаиваем интересы граждан в судах и других инстанциях</h2>
+                    <button class="information__btn btn">Получить консультацию</button>
+                    <div class="information__box">
+                        <div class="information__box-items">
+                            <div class="information__box-img">
+                                <img src="icons/file.svg" alt="Объясним все законы">
+                            </div>
+                            <p class="information__box-info">Объясним все законы и акты доступным языком</p>
+                        </div>
+                        <div class="information__box-items">
+                            <div class="information__box-img">
+                                <img src="icons/ruble.svg" alt="Расрочка на консульацию юриста">
+                            </div>
+                            <p class="information__box-info">Нужна рассрочка? Предоставим!</p>
+                        </div>
+                        <div class="information__box-items">
+                            <div class="information__box-img">
+                                <img src="icons/bank.svg" alt="Бесплатная консультация">
+                            </div>
+                            <p class="information__box-info">Проведем первичную консультацию бесплатно</p>
+                        </div>
+                        <div class="information__box-items">
+                            <div class="information__box-img">
+                                <img src="icons/court.svg" alt="Решение проблемы в досудебном порядке">
+                            </div>
+                            <p class="information__box-info">Приоритет - решение проблемы в досудебном порядке</p>
+                        </div>
+                    </div>     
+                </div>           
+            </div>
+        </section>
+    </div>
+   
+</body>
+</html>

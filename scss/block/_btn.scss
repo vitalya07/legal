@@ -1,0 +1,22 @@
+.btn {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: $btnColor;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", system-ui;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover {
+        background-color: $btnColorHover;
+        box-shadow: 0 0 15px $btnColorHover;
+    }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'var';
+html, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", system-ui;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+span {
+    display: block;
+}
+.body__container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+@import '../block/title';
+@import '../block/subtitle';
+@import '../block/btn';
+@import '../block/modal';
+@import '../block/hamburger';
+
+@import '../block/header';
+@import '../block/information';
+
+@import 'media';

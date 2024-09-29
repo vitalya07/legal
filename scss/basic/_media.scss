@@ -1,0 +1,115 @@
+@media(max-width: 1536px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media(max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+    .header {
+        &__logo {
+            width: 250px;
+            gap: 8px;
+            font-size: 16px;
+            &-img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &__connection {
+            &-item {
+                font-size: 16px;
+            }
+        }
+        &__lists {
+            font-size: 12px;
+            line-height: 18px;
+            &-item {
+                width: 120px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 990px;
+    }
+    .header {
+        &__logo {
+            width: 250px;
+            gap: 8px;
+            font-size: 12px;
+            line-height: 14px;
+            &-img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &__connection {
+            &-item {
+                font-size: 14px;
+            }
+        }
+        &__lists {
+            font-size: 12px;
+            line-height: 16px;
+            &-item {
+                width: 120px;
+                height: 40px;
+
+            }
+        }
+    }
+}
+
+@media(max-width: 990px) {
+    .container {
+        max-width: 769px;
+    }
+    .header {
+        &__logo {
+            width: 65px;
+            &-img {
+                width: 60px;
+                height: 60px;
+            }
+            &-info {
+                display: none;
+            }
+        }
+        &__connection {
+            display: none;
+        }
+        .hamburger {
+            display: flex;
+            &__item {
+                background-color: #000000;
+            }
+            
+        }
+        &__navigation   {
+            position: absolute;
+            top: 0;
+            right: -300px;
+            width: 30%;
+            background-color: $textColorLogo;
+            padding: 75px 20px;
+            visibility: hidden;
+            transition: transform .5s, visibility .5s;
+        }
+        &__lists {
+            display: block;
+            text-align: left;
+            font-size: 20px;
+            &-item {
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+        
+    }
+}

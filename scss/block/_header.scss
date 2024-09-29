@@ -1,0 +1,138 @@
+.header {
+    padding: 20px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 330px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-family: "Open Sans", system-ui;
+        font-size: 18px;
+        font-weight: 700;
+        color: $textColorLogo;
+        line-height: 24px;
+        letter-spacing: 1px;
+        &-img {
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__connection {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        box-shadow: 0 0 15px #bdbdbd;
+        padding: 5px 10px;
+        border-radius: 30px;
+        &-items {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        &-item {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: $textColorLogo;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 0;
+                height: 2px;
+                background-color: $textColorLogo;
+                transition: all .4s;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+        &-icon {
+            width: 25px;
+            height: 25px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__lists {
+        font-family: "Open Sans", system-ui;
+        font-size: 16px;
+        font-weight: 700;        
+        line-height: 24px;
+        letter-spacing: 1px;
+        display: flex;
+        gap: 10px;
+        &-item {            
+            width: 150px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $textColorLogo;
+            border-radius: 20px;
+            transition: all .4s;
+            cursor: pointer;
+            &:hover {
+                background-color: $textColorHover;
+                box-shadow: 0 0 15px $textColorHover;
+            }
+        }
+        &-btn {
+            color: #fff;
+        }
+    }
+    &.open {
+        .header__navigation {
+            transform: translateX(-100%);
+            visibility: visible;  
+        }
+        .hamburger__item {
+            background-color: #fff;             
+            &:first-child {
+                transform:  rotate(45deg);
+                top: 25px;
+                left: 10px;
+                transition: all .4s;
+            }  
+            &:nth-child(2) {
+                opacity: 0;
+                transition: all .2s;
+            }
+            &:last-child {
+                top: 25px;
+                left: 10px;
+                transform:  rotate(-45deg);
+                transition: all .4s;
+            }       
+        }
+    }
+}
+
+// .header.open {
+//    .header__navigation {
+//         transform: translateX(-100%);
+//    }
+// }

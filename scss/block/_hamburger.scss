@@ -1,0 +1,30 @@
+.hamburger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 20;
+    position: relative;
+    display: none; 
+    &__item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        height: 3px;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+        &:first-child {
+            top: 30%;
+            transition: all .4s;
+        }
+        &:nth-child(2) {
+            width: 50%;
+            left: 55%;
+            transition: all .2s;
+        }
+        &:last-child {
+            top: 70%;
+            transition: all .4s;
+        }
+    }
+}
