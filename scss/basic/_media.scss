@@ -2,6 +2,27 @@
     .container {
         max-width: 1400px;
     }
+    .information {
+        padding: 60px 0;
+        &__container {
+            max-width: 1450px;
+        }
+        &__title {
+            font-size: 50px;
+            line-height: 55px;
+        }
+        &__box {
+            &-img {
+                width: 50px;
+                height: 50px;
+            }
+            &-items {
+                flex-direction: column;
+                align-items: flex-start
+            }
+        }
+    }
+    
 }
 
 @media(max-width: 1400px) {
@@ -64,6 +85,31 @@
             }
         }
     }
+    .information {
+        padding: 40px 0;
+        &__container {
+            max-width: 1000px;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        &__box {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            &-items {
+                flex-direction: row;
+            }
+            &-img {
+                width: 40px;
+                height: 40px;
+            }
+            &-info {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @media(max-width: 990px) {
@@ -88,14 +134,13 @@
             display: flex;
             &__item {
                 background-color: #000000;
-            }
-            
+            }            
         }
         &__navigation   {
             position: absolute;
             top: 0;
             right: -300px;
-            width: 30%;
+            width: 300px;
             background-color: $textColorLogo;
             padding: 75px 20px;
             visibility: hidden;
@@ -105,10 +150,129 @@
             display: block;
             text-align: left;
             font-size: 20px;
+            background-color: $textColorLogo;
+            width: 70%;
             &-item {
                 width: 100%;
                 justify-content: flex-start;
             }
+        }
+        
+    }
+}
+
+@media(max-width: 769px) {
+    .container {
+        max-width: 556px;
+    }
+    .header {
+        &__logo {
+            width: 45px;
+            height: 45px;
+            &-img {
+                width: 40px;
+                height: 40px;
+            }
+        }      
+    }
+    .information {
+        padding: 20px 0;
+        &__background {
+            min-height: 500px;
+            border-radius: 10px;
+            background-image: url('../img/bg2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 30px;
+        }
+        &__btn {
+            width: 100%;
+            height: 60px;
+            font-size: 14px;
+            padding: 10px;
+            margin-bottom: 70px;
+        }
+        &__box {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            &-items {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+            &-img {
+                width: 30px;
+                height: 30px;
+            }
+            &-info {
+                font-size: 18px;
+                color: #ffffff;
+                text-shadow: 0 0 25px #000;
+            }
+        }
+    }
+    .modal {
+        &__box {
+            max-width: 300px;
+        }
+        &__input {
+            width: 250px;
+
+        }
+        &__btn {
+            width: 250px;
+        }
+    }
+}
+
+@media(max-width: 556px) {
+    .container {
+        max-width: 320px;
+    }
+    .header {
+        &__logo {
+            width: 40px;
+            &-img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        &__lists {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+           
+        }
+        
+    }
+}
+
+@media(max-width: 320px) {
+    .header {
+        &__logo {
+            width: 35px;
+            &-img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &__lists {
+            display: block;
+            text-align: left;
+            font-size: 10px;
+           
         }
         
     }
