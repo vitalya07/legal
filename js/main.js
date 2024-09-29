@@ -68,3 +68,15 @@ document.querySelector('.hamburger').addEventListener('click', function() {
     document.querySelector('.header').classList.toggle('open');
 });
 
+let tabsCitizens = document.getElementById('citizens-btn');
+let tabsBisnes = document.getElementById('bisnes-btn');
+
+tabsCitizens.addEventListener('click', function() {
+    document.getElementById('bissnes').style.display = 'none'
+    document.getElementById('citizens').style.display = 'grid'
+});
+
+tabsBisnes.addEventListener('click', function() {
+    document.getElementById('citizens').style.display = 'none'
+    document.getElementById('bissnes').style.display = 'grid'
+})

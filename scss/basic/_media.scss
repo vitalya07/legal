@@ -20,9 +20,15 @@
                 flex-direction: column;
                 align-items: flex-start
             }
+        }      
+    }
+    .priveleges {
+        &__item {
+            &-grid {
+                grid-template-columns: repeat(3,350px);
+            }
         }
     }
-    
 }
 
 @media(max-width: 1400px) {
@@ -59,6 +65,16 @@
             &-img {
                 width: 100px;
                 height: 100px;
+            }
+        }
+    }
+    .priveleges {
+        &__title {
+            max-width: 40%;
+        }
+        &__item {
+            &-grid {
+                grid-template-columns: repeat(3,300px);
             }
         }
     }
@@ -136,6 +152,24 @@
             }
         }
     }
+    .priveleges {
+        &__title {
+            max-width: 60%;
+        }
+        &__item {
+            &-grid {
+                grid-template-columns: repeat(3,220px);
+            }
+            &-img {
+                width: 100px;
+                height: 100px;
+            }
+            &-descr {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
 }
 
 @media(max-width: 990px) {
@@ -206,6 +240,25 @@
             &-img {
                 width: 130px;
                 height: 130px;
+            }
+        }
+    }
+    .priveleges {
+        padding: 30px 0;
+        &__title {
+            max-width: 80%;
+        }
+        &__item {
+            &-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+            &-img {
+                width: 100px;
+                height: 100px;
+            }
+            &-descr {
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
@@ -303,6 +356,53 @@
             }
         }
     }
+    .tabs {
+        padding: 20px 0;
+        &__wrapper {
+            margin-bottom: 15px;
+        }
+        &__tab {
+            width: 150px;
+            height: 40px;
+        }
+        &__title {
+            font-size: 14px;
+        }
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+            gap: 15px;
+            justify-content: center;
+            &-name {
+                font-size: 16px;
+            }
+        }
+    }
+    .priveleges {
+        padding: 30px 0;
+        &__title {
+            max-width: 100%;
+        }
+        &__box {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            justify-content: center;
+        }
+        &__item {
+            &-title {
+                font-size: 18px;
+            }
+            &-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+            &-img {
+                width: 80px;
+                height: 80px;
+            }
+            &-descr {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
 }
 
 @media(max-width: 556px) {
@@ -328,6 +428,9 @@
 }
 
 @media(max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
     .header {
         &__logo {
             width: 35px;
