@@ -1,0 +1,66 @@
+.prompty {
+    padding: 50px 0;
+    &__title {
+        margin-bottom: 100px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    &__information {
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        &-subtitle {
+            margin-bottom: 60px;
+        }
+        &-paragraph {
+            font-family: "Open Sans", system-ui;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 1.2px;
+            color: $textColor;
+            margin-bottom: 30px;
+        }
+        &-list {
+            list-style-type: disc;
+        }
+        &-boxYelow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f7f2c9;
+            padding: 30px 50px;
+            margin-bottom: 30px;
+        }
+        &-item {
+            margin-bottom: 20px;
+            font-family: "Open Sans", system-ui;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.2px;
+            color: $textColor;
+        }
+    }
+    &__faq {
+        max-width: 600px;
+        &-img {
+            width: 500px;
+            height: 400px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-subtitle {
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Юридическая консультация</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="css/style.css">  
     <script src="js/inputmask.min.js" defer></script>
     <script src="js/just-validate.min.js" defer></script>
@@ -74,7 +74,7 @@
                         </div>
                         <nav class="header__navigation">
                             <ul class="header__lists">
-                                <li class="header__lists-item"><a href="#" class="header__lists-btn">О компании</a></li>
+                                <li class="header__lists-item"><a href="about.html" target="_blank" class="header__lists-btn">О компании</a></li>
                                 <li class="header__lists-item"><a href="#" class="header__lists-btn">Услуги и цены</a></li>
                                 <li class="header__lists-item"><a href="#" class="header__lists-btn">Статьи</a></li>
                                 <li class="header__lists-item"><a href="#" class="header__lists-btn">Примеры дел</a></li>
@@ -87,276 +87,227 @@
                 </div>
             </div>           
         </header>
-        <section class="information">
-            <div class="container information__container">   
-                <div class="information__background">
-                    <h1 class="title information__title">Помощь юриста в Нижневартовске</h1>
-                    <h2 class="information__subtitle">Отстаиваем интересы граждан в судах и других инстанциях</h2>
-                    <button class="information__btn btn">Получить консультацию</button>
-                    <div class="information__box">
-                        <div class="information__box-items">
-                            <div class="information__box-img">
-                                <img src="icons/file.svg" alt="Объясним все законы">
+        <main>
+            <section class="information">
+                <div class="container information__container">   
+                    <div class="information__background">
+                        <h1 class="title information__title">Помощь юриста в Нижневартовске</h1>
+                        <h2 class="information__subtitle">Отстаиваем интересы граждан в судах и других инстанциях</h2>
+                        <button class="information__btn btn">Получить консультацию</button>
+                        <div class="information__box">
+                            <div class="information__box-items">
+                                <div class="information__box-img">
+                                    <img src="icons/file.svg" alt="Объясним все законы">
+                                </div>
+                                <p class="information__box-info">Объясним все законы и акты доступным языком</p>
                             </div>
-                            <p class="information__box-info">Объясним все законы и акты доступным языком</p>
-                        </div>
-                        <div class="information__box-items">
-                            <div class="information__box-img">
-                                <img src="icons/ruble.svg" alt="Расрочка на консульацию юриста">
+                            <div class="information__box-items">
+                                <div class="information__box-img">
+                                    <img src="icons/ruble.svg" alt="Расрочка на консульацию юриста">
+                                </div>
+                                <p class="information__box-info">Нужна рассрочка? Предоставим!</p>
                             </div>
-                            <p class="information__box-info">Нужна рассрочка? Предоставим!</p>
-                        </div>
-                        <div class="information__box-items">
-                            <div class="information__box-img">
-                                <img src="icons/bank.svg" alt="Бесплатная консультация">
+                            <div class="information__box-items">
+                                <div class="information__box-img">
+                                    <img src="icons/bank.svg" alt="Бесплатная консультация">
+                                </div>
+                                <p class="information__box-info">Проведем первичную консультацию бесплатно</p>
                             </div>
-                            <p class="information__box-info">Проведем первичную консультацию бесплатно</p>
-                        </div>
-                        <div class="information__box-items">
-                            <div class="information__box-img">
-                                <img src="icons/court.svg" alt="Решение проблемы в досудебном порядке">
+                            <div class="information__box-items">
+                                <div class="information__box-img">
+                                    <img src="icons/court.svg" alt="Решение проблемы в досудебном порядке">
+                                </div>
+                                <p class="information__box-info">Приоритет - решение проблемы в досудебном порядке</p>
                             </div>
-                            <p class="information__box-info">Приоритет - решение проблемы в досудебном порядке</p>
+                        </div>     
+                    </div>           
+                </div>
+            </section>
+            <section class="bank">
+                <div class="container">
+                    <div class="bank__wrapper">
+                        <a href="#" class="bank__items">
+                            <h3 class="title bank__items-title">Банкротство</h3>
+                            <p class="bank__items-subtitle subtitle">
+                                Свобода от долгов, звонков коллекторов и кредитов
+                            </p>
+                            <div class="bank__items-img">
+                                <img src="icons/banner-bank.svg" alt="иконка банка">
+                            </div>
+                        </a>
+                        <div href="#" class="bank__items">
+                            <h3 class="title bank__items-title">Мы на связи</h3>
+                            <div class="bank__items-container">
+                                <!-- <a href="#" class="bank__items-img bank__items-images">
+                                    <img src="icons/logos_telegram.svg" alt="иконка телеграмма">
+                                </a> -->
+                                <a href="tel:+79821592105" class="bank__items-img bank__items-images">
+                                    <img src="icons/phone-filll.svg" alt="иконка телефона">
+                                </a>
+                            </div>                       
                         </div>
-                    </div>     
-                </div>           
-            </div>
-        </section>
-        <section class="bank">
-            <div class="container">
-                <div class="bank__wrapper">
-                    <a href="#" class="bank__items">
-                        <h3 class="title bank__items-title">Банкротство</h3>
-                        <p class="bank__items-subtitle subtitle">
-                            Свобода от долгов, звонков коллекторов и кредитов
-                        </p>
-                        <div class="bank__items-img">
-                            <img src="icons/banner-bank.svg" alt="иконка банка">
-                        </div>
-                    </a>
-
-                    <div href="#" class="bank__items">
-                        <h3 class="title bank__items-title">Мы на связи</h3>
-                        <p class="bank__items-subtitle subtitle">
-                            Гарантируем соблюдение адвокатской тайны
-                        </p>
-                        <div class="bank__items-container">
-                            <a href="#" class="bank__items-img bank__items-images">
-                                <img src="icons/logos_telegram.svg" alt="иконка телеграмма">
-                            </a>
-                            <a href="tel:+79821592105" class="bank__items-img bank__items-images">
-                                <img src="icons/phone-filll.svg" alt="иконка телефона">
-                            </a>
-                        </div>                       
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="tabs">
-            <div class="container">
-                <div class="tabs__wrapper">
-                    <div class="tabs__tab" id="citizens-btn">
-                        <div class="title tabs__title">Для граждан</div>
+            </section>
+            <section class="tabs">
+                <div class="container">
+                    <div class="tabs__wrapper">
+                        <div class="tabs__tab" id="citizens-btn">
+                            <div class="title tabs__title">Для граждан</div>
+                        </div>
+                        <div class="tabs__tab" id="bisnes-btn">
+                            <div class="title tabs__title">Для бизнеса</div>
+                        </div>
                     </div>
-                    <div class="tabs__tab" id="bisnes-btn">
-                        <div class="title tabs__title">Для бизнеса</div>
+                    <div class="tabs__grid tabs__citizens" id="citizens">
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Банкротство</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Уголовные дела</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Семейные дела</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Арбитражные суды</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Автоюрист и страхование</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Жилищное право и приватизация</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Трудовые споры</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Права потребителей</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Наследство</div>
+                        </div>
+                    </div>
+                    <!-- бизнес -->
+                    <div class="tabs__grid tabs__bisnes" id="bissnes" >
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Банкротство</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Консультация бизнеса</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Составление договоров</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Арбитражные суды</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Экспертиза документов</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Взыскание долгов</div>
+                        </div>
+                        <div class="tabs__grid-item">
+                            <div class="tabs__grid-name">Трудовые споры</div>
+                        </div>
                     </div>
                 </div>
-                <div class="tabs__grid tabs__citizens" id="citizens" >
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/many.webp" alt="Банкротство">
-                        </div>
-                        <div class="tabs__grid-name black">Банкротство</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/2.webp" alt="Уголовные дела">
-                        </div>
-                        <div class="tabs__grid-name">Уголовные дела</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/3.webp" alt="Семейные дела">
-                        </div>
-                        <div class="tabs__grid-name black">Семейные дела</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/4.webp" alt="Арбитражный суд">
-                        </div>
-                        <div class="tabs__grid-name">Арбитражные суды</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/5.webp" alt="Автоюрист">
-                        </div>
-                        <div class="tabs__grid-name">Автоюрист и страхование</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/6.webp" alt="Жилищное право">
-                        </div>
-                        <div class="tabs__grid-name">Жилищное право и приватизация</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/7.webp" alt="Трудовые споры">
-                        </div>
-                        <div class="tabs__grid-name black">Трудовые споры</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/8.webp" alt="Права потребителей">
-                        </div>
-                        <div class="tabs__grid-name black">Права потребителей</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/9.webp" alt="Наследство">
-                        </div>
-                        <div class="tabs__grid-name black">Наследство</div>
-                    </a>
-                </div>
-                <!-- бизнес -->
-                <div class="tabs__grid tabs__bisnes" id="bissnes" >
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/many.webp" alt="Банкротство">
-                        </div>
-                        <div class="tabs__grid-name black">Банкротство</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/1.1.webp" alt="Консультация бизнеса">
-                        </div>
-                        <div class="tabs__grid-name">Консультация бизнеса</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/1.2.webp" alt="Составление договоров">
-                        </div>
-                        <div class="tabs__grid-name black">Составление договоров</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/4.webp" alt="Арбитражный суд">
-                        </div>
-                        <div class="tabs__grid-name">Арбитражные суды</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/1.3.webp" alt="Экспертиза документов">
-                        </div>
-                        <div class="tabs__grid-name black">Экспертиза документов</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/1.4.webp" alt="Взыскание долгов">
-                        </div>
-                        <div class="tabs__grid-name">Взыскание долгов</div>
-                    </a>
-                    <a href="#" class="tabs__grid-item">
-                        <div class="tabs__grid-img">
-                            <img src="img/7.webp" alt="Трудовые споры">
-                        </div>
-                        <div class="tabs__grid-name black">Трудовые споры</div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="priveleges">
-            <div class="container">
-                <h2 class="title priveleges__title">Привилегии для вас</h2>
-                <div class="priveleges__box">
-                    <div class="priveleges__item">
-                        <h3 class="title priveleges__item-title">
-                            <span class="priveleges__item-number">2</span>
-                            Разумная стоимость
-                        </h3>
-                        <p class="priveleges__item-descr">
-                            Составляем стратегию и следуем ей, предоставляем детальные отчеты о проделанной работе.
-                        </p>
-                    </div>
-
-                    <div class="priveleges__item">
-                        <h3 class="title priveleges__item-title">
-                            <span class="priveleges__item-number">3</span>
-                            Финансовые гарантии
-                        </h3>
-                        <p class="priveleges__item-descr">
-                            Составляем договор и несем ответственность за все решения
-                        </p>
-                    </div>
-
-                    <div class="priveleges__item">
-                        <h3 class="title priveleges__item-title">
-                            <span class="priveleges__item-number">4</span>
-                            Увереность в результате
-                        </h3>
-                        <p class="priveleges__item-descr">
-                            Мы не даем пустых обещаний - беремся за дело и доводим его до конца.
-                        </p>
-                    </div>
-
-                    <div class="priveleges__item">
-                        <h3 class="title priveleges__item-title">
-                            <span class="priveleges__item-number">1</span>
-                            Разумная стоимость
-                        </h3>
-                        <p class="priveleges__item-descr">
-                            Консультация юриста - это доступно. Оптимизируем работу, учитывая ваше финансовое положение.
-                        </p>
-                    </div>
-                    <div class="priveleges__item-grid">
-                        <div class="priveleges__item priveleges__item-5">
-                            <div class="priveleges__item-img">
-                                <img src="icons/banner-bank.svg" alt="Банкротство">
-                            </div>
+            </section>
+            <section class="priveleges">
+                <div class="container">
+                    <h2 class="title priveleges__title">Привилегии для вас</h2>
+                    <div class="priveleges__box">
+                        <div class="priveleges__item">
+                            <h3 class="title priveleges__item-title">
+                                <span class="priveleges__item-number">1</span>
+                                Разумная стоимость
+                            </h3>
                             <p class="priveleges__item-descr">
-                                Банкротство за 2500 рублей в месяц с полной гарантией списания долгов за 24 месяц
+                                Консультация юриста - это доступно. Оптимизируем работу, учитывая ваше финансовое положение.
                             </p>
                         </div>
-                        <div class="priveleges__item priveleges__item-5">
-                            <h3 class="title priveleges__item-title">2005</h3>
+    
+                        <div class="priveleges__item">
+                            <h3 class="title priveleges__item-title">
+                                <span class="priveleges__item-number">2</span>
+                                Финансовые гарантии
+                            </h3>
                             <p class="priveleges__item-descr">
-                                92% успешных дел в суде с 2005 года
+                                Составляем договор и несем ответственность за все решения
                             </p>
                         </div>
-                        <div class="priveleges__item priveleges__item-5">
-                            <div class="priveleges__item-img">
-                                <img src="icons/suggest.svg" alt="Файл">
+    
+                        <div class="priveleges__item">
+                            <h3 class="title priveleges__item-title">
+                                <span class="priveleges__item-number">3</span>
+                                Увереность в результате
+                            </h3>
+                            <p class="priveleges__item-descr">
+                                Мы не даем пустых обещаний - беремся за дело и доводим его до конца.
+                            </p>
+                        </div>
+    
+                        <div class="priveleges__item">
+                            <h3 class="title priveleges__item-title">
+                                <span class="priveleges__item-number">4</span>
+                                Отчеты и прозрачность
+                            </h3>
+                            <p class="priveleges__item-descr">
+                                Составляем стратегию и следуем ей, предоставляем детальные отчеты о проделанной работе.
+                            </p>
+                        </div>
+                        <div class="priveleges__item-grid">
+                            <div class="priveleges__item priveleges__item-5">
+                                <div class="priveleges__item-img">
+                                    <img src="icons/banner-bank.svg" alt="Банкротство">
+                                </div>
+                                <p class="priveleges__item-descr">
+                                    Банкротство за 2500 рублей в месяц с полной гарантией списания долгов за 24 месяц
+                                </p>
                             </div>
-                            <p class="priveleges__item-descr">
-                                Составляем план работ, обговариваем цену и заключаем договор
-                            </p>
+                            <div class="priveleges__item priveleges__item-5">
+                                <!-- <h3 class="title priveleges__item-title">2005</h3> -->
+                                <p class="priveleges__item-descr">
+                                    92% успешных дел в суде с 2005 года
+                                </p>
+                            </div>
+                            <div class="priveleges__item priveleges__item-5">
+                                <div class="priveleges__item-img">
+                                    <img src="icons/suggest.svg" alt="Файл">
+                                </div>
+                                <p class="priveleges__item-descr">
+                                    Составляем план работ, обговариваем цену и заключаем договор
+                                </p>
+                            </div>
                         </div>
+                        
                     </div>
-                    
                 </div>
-            </div>
-        </section>
-        <section class="clients">
-            <div class="container">
-                <div class="clients__title title">Наши клиенты</div>
-                <div class="clients__wrapper">
-                    <div class="clients__call">
-                        <div class="clients__call-img">
-                            <img src="img/img1.jpg" alt="Первая помощь клиентам">
+            </section>
+            <section class="clients">
+                <div class="container">
+                    <div class="clients__title title">Наши клиенты</div>
+                    <div class="clients__wrapper">
+                        <div class="clients__call">
+                            <div class="clients__call-img">
+                                <img src="img/img1.jpg" alt="Первая помощь клиентам">
+                            </div>
+                            <p class="clients__call-info">Юридическое сопровождение бизнеса и граждан</p>
+                            <button class="clients__btn btn">Заказать звонок</button>
                         </div>
-                        <p class="clients__call-info">Первая юридическая консультация наших специалистов предоставляется бесплатно!</p>
-                        <button class="clients__btn btn">Заказать звонок</button>
+                        <div class="clients__map">
+                            <h3 class="clients__map-title title">Правовой сервис</h3>
+                            <div class="clients__feedback">
+                                <div class="clients__feedback-item" style="width:100%;height:400px;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/234571748160?comments"></iframe><a href="https://yandex.ru/maps/org/yuridicheskaya_pomoshch/234571748160/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Юридическая помощь на карте Нижневартовска — Яндекс Карты</a></div>
+                            </div>
+                        </div>                   
                     </div>
-                    <div class="clients__map">
-                        <h3 class="clients__map-title title">Правовой сервис</h3>
-                        <div class="clients__feedback">
-                            <div class="clients__feedback-item" style="width:100%;height:400px;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/234571748160?comments"></iframe><a href="https://yandex.ru/maps/org/yuridicheskaya_pomoshch/234571748160/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Юридическая помощь на карте Нижневартовска — Яндекс Карты</a></div>
-                        </div>
-                    </div>                   
+                   
                 </div>
-               
-            </div>
-        </section>
+            </section>
+        </main>
+   
         <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__wrapper">

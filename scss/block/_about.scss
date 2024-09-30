@@ -1,0 +1,57 @@
+.about {
+    padding: 80px 0;
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__title {
+        margin-bottom: 100px;
+    }
+    &__descr {
+        max-width: 600px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 80px;
+        font-family: "Open Sans", system-ui;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 1.2px;
+        &-3, &-5 {
+            font-weight: 900;
+        }
+    }
+    &__image {
+        width: 700px;
+        height: 700px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__lists {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f2c9;
+        padding: 30px 50px;
+    }
+    &__list {
+        list-style-type: disc;
+        &-item {
+            font-family: "Open Sans", system-ui;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 1.2px;
+            color: $textColor;
+            margin-bottom: 20px;
+        }
+    }
+}

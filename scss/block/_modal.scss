@@ -19,6 +19,7 @@
         background-color: $textColorHover;
         scale: 0;
         transition: scale .6s;
+        z-index: 100;
         &-header {
             display: flex;
             justify-content: space-between;
