@@ -61,6 +61,9 @@ validate.addField('#modal__name', [
 document.querySelector('.information__btn').addEventListener('click', function() {
     document.querySelector('.modal').classList.add('active');
 });
+document.querySelector('.clients__btn').addEventListener('click', function() {
+    document.querySelector('.modal').classList.add('active');
+});
 document.querySelector('.modal__close').addEventListener('click', function() {
     document.querySelector('.modal').classList.remove('active');
 });
