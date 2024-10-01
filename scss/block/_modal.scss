@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     visibility: hidden;
+    z-index: 100;
     opacity: 0;
     transition: visibility .4s, opacity .4s;
     &__box {
@@ -19,7 +20,6 @@
         background-color: $textColorHover;
         scale: 0;
         transition: scale .6s;
-        z-index: 100;
         &-header {
             display: flex;
             justify-content: space-between;
