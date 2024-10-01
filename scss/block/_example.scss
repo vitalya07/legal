@@ -1,0 +1,23 @@
+.examples {
+    padding: 60px 0;
+    &__back {
+        margin-bottom: 60px;
+        display: block;
+    }
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__img {
+        max-width: 400px;
+        height: 300px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__information {
+        font-weight: 400;
+        font-size: 20px;
+    }
+}

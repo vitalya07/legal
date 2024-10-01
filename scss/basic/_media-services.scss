@@ -36,7 +36,20 @@
             order: 1;
             margin-bottom: 20px;
         }
+        &__box {
+            padding: 50px 0;
+        }
     }    
+}
+@media(max-width: 769px) {
+    .services {
+       &__price {
+            &-items {
+                align-items: center;
+                justify-content: center;
+            }
+       } 
+    }
 }
 @media(max-width: 556px) {
     .services {
@@ -48,5 +61,59 @@
             width: 100%;
             margin-bottom: 10px;
         }
-    }    
+        &__box {
+            padding: 20px 0;
+        }
+        &__price {
+            padding: 20px 0;
+            &-title {
+                font-size: 18px;
+                line-height: 20px;
+                text-align: left;
+            }
+            &-subtitle {
+                font-size: 16px;
+                line-height: 18px;
+                text-align: left;
+            }
+            &-information {
+                font-size: 14px;
+                line-height: 16px;
+            }
+            &-item {
+                &--title {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                &--descr {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }  
+    .terms {
+        &__title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__warning {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        &__items {
+            align-items: center;
+            justify-content: center;
+        }
+        &__work {
+            &-title {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    } 
 }

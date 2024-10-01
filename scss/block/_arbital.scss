@@ -1,0 +1,14 @@
+.arbital {
+    padding: 60px 0;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__list {
+        list-style-type: disc;
+        padding: 30px 50px;
+        background-color: #c9c9c9;
+    }
+    &__item {
+        margin-bottom: 20px;
+    }
+}

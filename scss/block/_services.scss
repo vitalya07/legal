@@ -8,7 +8,7 @@
     }
     &__wrapper {
         display: flex;
-        align-items: start;
+        align-items: start;        
         justify-content: space-between;
     }
     &__offer {
@@ -31,7 +31,15 @@
             font-size: 16px;
             line-height: 20px;
             letter-spacing: 1.2px;
-            color: $textColor;
+            color: #333;
+        }        
+        &-help {
+            font-family: "Open Sans", system-ui;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.2px;
+            color: #333;
         }
     }
     &__img {
@@ -43,42 +51,35 @@
             object-fit: cover;
         }
     }
-    &-help {
-        font-family: "Open Sans", system-ui;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 1.2px;
-        color: $textColor;
-    }
     &__btn {
         margin-bottom: 100px;
     }
-    &__box {
-        justify-content: space-between;
+    .services__box {
+        justify-content: center;
         align-items: start;
         flex-wrap: wrap;
         display: flex;
-        padding: 150px 0; 
+        padding: 150px 0;
+        column-gap: 100px;
     }
     &__table {
         padding: 50px 0;
-        position: relative; 
+        position: relative;
         &-title {
             font-family: "Open Sans", system-ui;
             font-weight: 700;
             font-size: 20px;
             line-height: 22px;
             letter-spacing: 1.2px;
-            color: $textColor;
+            color: #333;
             text-align: center;
             margin-bottom: 30px;
-        }      
+        }
         &-item {
-            width: 700px;
+            max-width: 700px;
             &--row {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-between;          
                 align-items: center;
                 min-height: 50px;
                 margin-bottom: 15px;
@@ -87,7 +88,7 @@
                 font-size: 18px;
                 line-height: 20px;
                 letter-spacing: 1.2px;
-                color: $textColor;
+                color: #333;
                 padding: 10px;
             }
             &--info {
@@ -111,11 +112,85 @@
             border: 2px solid #000;
             padding: 10px;
             cursor: pointer;
-            transition: all .4s;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
             &:hover {
                 box-shadow: 0 0 10px #000;
             }
-           
+        }
+    }
+    &__price {
+        padding: 50px 0;
+        &-container {
+            background-color: #f7f2c9;
+            padding: 10px 20px;
+            margin-bottom: 40px;
+        }
+        &-title {
+            font-family: "Open Sans", system-ui;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 29px;
+            letter-spacing: 1.2px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &-subtitle {
+            font-family: "Open Sans", system-ui;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 1.2px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &-information {
+            font-family: "Open Sans", system-ui;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: 1.2px;
+            color: #333;
+            text-align: left;
+        } 
+        &-items {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: start;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        }
+        &-item {
+            max-width: 300px;
+            min-height: auto;
+            &--title {
+                font-family: "Open Sans", system-ui;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 28px;
+                letter-spacing: 1.2px;
+                color: #333;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            &--descr {
+                font-family: "Open Sans", system-ui;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: 1.2px;
+                color: #333;
+                text-align: left;
+                margin-bottom: 20px;
+            }
         }
     }
 }

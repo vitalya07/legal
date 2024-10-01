@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/inputmask.min.js" defer></script>
-    <script src="js/just-validate.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">    
     <title>Услуги и цены</title>   
 </head>
 <body>
     <div class="body__container">
+        <div class="modal">
+            <div class="modal__box">
+                <div class="modal__box-header">
+                    <div class="modal__title title">Оставить заявку</div>
+                    <div class="modal__close"></div>            
+                </div>               
+                <form action="#" class="modal__form" id="modal__form">
+                    <div>
+                        <input type="name" name="name" class="modal__input" id="modal__name" placeholder="Ваше имя">
+                    </div>
+                    <div>
+                        <input type="phone" name="phone" class="modal__input" id="modal__phone" placeholder="Ваше Телефон">
+                    </div>
+                    <div>
+                        <input type="email" name="email" class="modal__input" id="modal__email" placeholder="Ваш E-mail">
+                    </div>
+                    <button class="btn modal__btn" type="submit">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
         <header class="header" id="header">
             <div class="container">
                 <div class="header__wrapper">
@@ -56,10 +73,8 @@
                             <ul class="header__lists">
                                 <li class="header__lists-item"><a href="about.html" target="_blank" class="header__lists-btn">О компании</a></li>
                                 <li class="header__lists-item"><a href="services.html" target="_blank" class="header__lists-btn">Услуги и цены</a></li>
-                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Статьи</a></li>
-                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Примеры дел</a></li>
-                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Вопросы</a></li>
-                                <li class="header__lists-item"><a href="#" class="header__lists-btn">Контакты</a></li>
+                                <li class="header__lists-item"><a href="examples.html" class="header__lists-btn">Примеры дел</a></li>
+                                <li class="header__lists-item"><a href="contacts.html" class="header__lists-btn">Контакты</a></li>
                             </ul>                         
                         </nav>
                     </div>                
@@ -83,7 +98,7 @@
                                     <li class="services__offer-item">Представление интересов в Суде – от 4000 руб. </li>
                                 </ul>
                             </div>
-                            <button class="btn services__btn">Бесплатная консультация</button>
+                            <button class="btn services__btn information__btn">Бесплатная консультация</button>
                             <div class="services__offer-help">Обращайтесь за помощью, мы знаем что делать!</div>
                         </div>
                         <div class="services__img">
@@ -686,8 +701,129 @@
                    
                 </div>                
             </section>
+            <section class="services__price">
+                <div class="container">
+                    <div class="services__price-container">
+                        <h4 class="services__price-title"> Цены на юридические услуги</h4>
+                        <h5 class="services__price-subtitle">Вся справочная информация по телефону предоставляется <b>бесплатно</b></h5>
+                        <p class="services__price-information">Каждый отдельный случай обращения за адвокатской помощью рассматривается индивидуально, по договоренности.
+                            Гонорар адвоката определяется с учетом сложности дела, объема работы, а также материального положения клиента.</p>
+                    </div>
+                    <div class="services__price-items">
+                        <div class="services__price-item">
+                            <h4 class="services__price-item--title">Каждый юрист имеет чёткую специализацию</h4>
+                            <p class="services__price-item--descr">Узкая специализация подразумевает, что адвокат прекрасно изучил тему и знает сотни прецедентов, похожих на ваш случай.</p>
+                        </div>
+
+                        <div class="services__price-item">
+                            <h4 class="services__price-item--title">В приоритете адвокатов – досудебное решение вопросов</h4>
+                            <p class="services__price-item--descr">Если интересы клиента можно защитить без суда, то наши специалисты приложат все усилия, для того чтобы достичь этого. Если вопрос не получается решить без суда, то судебные издержки (в том числе оплата услуг адвоката) включаются в сумму иска.</p>
+                        </div>
+
+                        <div class="services__price-item">
+                            <h4 class="services__price-item--title">Для нас не бывает слишком простых или слишком сложных дел</h4>
+                            <p class="services__price-item--descr">Юристы одинаково ответственно подходят и к делам о расторжении брака, и о взыскании компенсации за моральный вред, и о восстановлении права на собственность и т.д</p>
+                        </div>
+
+                        <div class="services__price-item">
+                            <h4 class="services__price-item--title">Предоставляем клиентам детальную информацию о ходе дела</h4>
+                            <p class="services__price-item--descr">Каждый свой шаг юристы объясняют клиентам. Это значит, что никто не будет действовать за вашей спиной.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="terms">
+                <div class="container">
+                    <h2 class="terms__title">Условия предоставления услуг</h2>
+                    <h3 class="terms__warning">
+                        Обратите внимание, что окончательная стоимость обсуждается с клиентом и может отличаться для каждого конкретного случая. Стоимость может быть как выше, так и ниже указанной на сайте. Наша ценовая политика направлена на оптимизацию расходов клиентов.
+                    </h3>
+                    <div class="terms__box">
+                        <div class="terms__box-circle"></div>
+                        <h4 class="terms__box-title">Наши клиенты часто спрашивают: почему существует такой разброс цен?</h4>
+                        <p class="terms__box-warning">
+                            Обратите внимание, что именно входит в стоимость услуги в разных фирмах города (консультация, оформление бумаг, представление в суде). В нашей компании, как правило, ориентировочная сумма в прайсе уже включает расходы на ведение дела.
+                        </p>
+                    </div>
+                    <div class="terms__work">
+                        <h2 class="terms__work-title">Выстраиваем работу с максимальной выгодой для вас:</h2>   
+                        <div class="terms__items">
+                            <h5 class="terms__descr">
+                                <b>Бесплатно</b> предоставляем справочную информацию по телефону
+                            </h5>
+                            <h5 class="terms__descr">
+                                Предлагаем наличный или безналичный расчёт
+                            </h5>
+                            <h5 class="terms__descr">
+                                Соглашаемся на оплату услуг юристов в рассрочку
+                            </h5>
+                            <h5 class="terms__descr">
+                                Проводим акции на популярные услуги и представляем антикризисные предложения
+                            </h5>
+                            <h5 class="terms__descr">
+                                Вы всегда понимаете, что входит в стоимость услуг
+                            </h5>
+                        </div>                     
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="container">
+                    <div class="questions__box">
+                        <h3 class="questions__title">Возник вопрос по стоимости услуг юристов?</h3>
+                        <p class="questions__subtitle">Задайте его прямо сейчас:</p>
+                        <a href="tel:+78124261446" class="questions__number">8 (812) 426 14 46</a>
+                        <button class="btn questions__btn information__btn">Обратный звонок</button>
+                    </div>
+                    
+                </div>
+            </section>
         </main>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__logo">
+                        <div class="footer__logo-img">
+                            <img src="icons/logo_white.svg" alt="Логотип сайта">                                
+                        </div>
+                        <div class="footer__logo-name">Юридическая <br>консульацию</div>
+                    </div>
+                    <div class="footer__connection">
+                        <div class="footer__connection-items">
+                            <a href="https://vk.com/nvlaw" class="footer__connection-item">
+                                <div class="footer__connection-icon">
+                                    <img src="icons/vk-white.svg" alt="логотип ВК">
+                                </div>
+                                <span class="footer__connection-info">Мы в Вконтакте</span>
+                            </a>
+                        </div>
+                        <div class="footer__connection-items">
+                            <a href="https://yandex.ru/maps/org/yuridicheskaya_pomoshch/234571748160/?ll=76.574434%2C60.930905&z=17" class="footer__connection-item">
+                                <div class="footer__connection-icon">
+                                    <img src="icons/maps-white.svg" alt="Геолокация">
+                                </div>
+                                <span class="footer__connection-info">Адрес: г. Нижневартовск, ул. Мусы Джалиля 9</span>
+                            </a>
+                        </div>
+                        <div class="footer__connection-items">
+                            <a href="tel:+79821592105" class="footer__connection-item">
+                                <div class="footer__connection-icon">
+                                    <img src="icons/phone-white.svg" alt="Телефон">
+                                </div>
+                                <span class="footer__connection-info">8 982 159 21 05</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__maps">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/yuridicheskaya_pomoshch/234571748160/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Юридическая помощь</a><a href="https://yandex.ru/maps/1091/nizhnevartovsk/category/legal_services/184105630/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Юридические услуги в Нижневартовске</a><a href="https://yandex.ru/maps/1091/nizhnevartovsk/category/registration_and_liquidation_of_enterprises/184105626/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Регистрация и ликвидация предприятий в Нижневартовске</a><iframe src="https://yandex.ru/map-widget/v1/org/yuridicheskaya_pomoshch/234571748160/?ll=76.574434%2C60.930905&z=17" width="100%" height="600px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </div>
+        </footer>
     </div>
-    
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

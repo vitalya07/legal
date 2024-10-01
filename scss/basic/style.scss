@@ -44,7 +44,17 @@ span {
 @import '../block/about';
 @import '../block/prompty';
 @import '../block/services';
+@import '../block/terms';
+@import '../block/questions';
+@import '../block/example';
+@import '../block/family';
+@import '../block/arbital';
+@import '../block/construction';
+@import '../block/contacts';
+
 
 @import 'media';
 @import 'media-about';
-@import 'media-services'
+@import 'media-services';
+@import 'media-example';
+@import 'media-contacts';
