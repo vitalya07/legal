@@ -42,11 +42,11 @@ function form() {
         },
     ]).onSuccess(async function() {
         let data = {
-            name: document.getElementById('name').value,
-            tel: document.getElementById('phone').value,
-            message: document.getElementById('msg').value
+            name: document.getElementById('modal__name').value,
+            tel: document.getElementById('modal__phone').value,
+            message: document.getElementById('modal__email').value
         }
-        let responsive = await fetch("mail.php", {
+        let responsive = await fetch("smart.php", {
             method: "POST",
             body:JSON.stringify(data),
             headers: {
@@ -133,6 +133,7 @@ if (window.location.pathname === '/examples.html') {
             el.style.backgroundColor = '#c9c9c9'
         }
     });
+    hamburger();
 }
 // Скрипты для страницы "Контакты"
 if (window.location.pathname === '/contacts.html') {    

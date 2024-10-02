@@ -41,3 +41,17 @@
         }
     }
 }
+@media(max-width: 320px) {
+    .construction {
+        &__table {
+            padding: 0;
+            &-header {
+                font-size: 8px;
+            }
+            &-item1,&-item2,&-item3 {
+                font-size: 8px;
+                padding: 2px 1px;
+            }
+        }
+    }
+}

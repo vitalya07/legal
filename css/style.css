@@ -2398,6 +2398,18 @@ span {
     padding: 2px 5px;
   }
 }
+@media (max-width: 320px) {
+  .construction__table {
+    padding: 0;
+  }
+  .construction__table-header {
+    font-size: 8px;
+  }
+  .construction__table-item1, .construction__table-item2, .construction__table-item3 {
+    font-size: 8px;
+    padding: 2px 1px;
+  }
+}
 @media (max-width: 993px) {
   .contacts {
     padding: 0 0 30px 0;
@@ -2474,4 +2486,4 @@ span {
   .contacts__btn {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
