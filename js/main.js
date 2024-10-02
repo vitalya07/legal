@@ -104,40 +104,54 @@ function tables() {
         });
     });
 }
+clickBtn();
+form();
+hamburger();
+tabs();
+tables();
 // Скрипты для главной страницы
-if(window.location.pathname === '/index.html') {  
-    tabs();
-    clickBtn();
-    form();
-    hamburger();    
-};  
+// if(window.location.pathname === '/index.html') {  
+//     tabs();
+//     clickBtn();
+//     form();
+//     hamburger();    
+// };  
 // Скрипты для страницы "О компании"
-if (window.location.pathname === '/about.html') {
-    hamburger()   
-}
+// if (window.location.pathname === '/about.html') {
+//     hamburger()   
+// }
 // Скрипты для страницы "Цены и услуги"
-if (window.location.pathname === '/services.html') {
-    hamburger();
-    clickBtn();
-    form();    
-    document.querySelector('.questions__btn').addEventListener('click', function() {
-        document.querySelector('.modal').classList.add('active');
-    });
-    tables();
-}
+// if (window.location.pathname === '/services.html') {
+//     hamburger();
+//     clickBtn();
+//     form();    
+//     document.querySelector('.questions__btn').addEventListener('click', function() {
+//         document.querySelector('.modal').classList.add('active');
+//     });
+//     tables();
+// }
 // Скрипты для Примеры дел
-if (window.location.pathname === '/examples.html') {
-    let tableItemConstruction = document.querySelectorAll('.construction__table-row');
-    tableItemConstruction.forEach((el, index) => {
-        if(index % 2 == 0) {
-            el.style.backgroundColor = '#c9c9c9'
-        }
-    });
-    hamburger();
-}
+// if (window.location.pathname === '/examples.html') {
+//     let tableItemConstruction = document.querySelectorAll('.construction__table-row');
+//     tableItemConstruction.forEach((el, index) => {
+//         if(index % 2 == 0) {
+//             el.style.backgroundColor = '#c9c9c9'
+//         }
+//     });
+//     hamburger();
+// }
 // Скрипты для страницы "Контакты"
-if (window.location.pathname === '/contacts.html') {    
-    hamburger();      
-    clickBtn(); 
-    form();
-}
+// if (window.location.pathname === '/contacts.html') {    
+//     hamburger();      
+//     clickBtn(); 
+//     form();
+// }
+document.querySelector('.questions__btn').addEventListener('click', function() {
+    document.querySelector('.modal').classList.add('active');
+});
+let tableItemConstruction = document.querySelectorAll('.construction__table-row');
+tableItemConstruction.forEach((el, index) => {
+    if(index % 2 == 0) {
+        el.style.backgroundColor = '#c9c9c9'
+    }
+});
